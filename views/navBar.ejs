@@ -1,0 +1,36 @@
+<nav class="navbar navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#"><h1 class="brandName">Crypto-DxD</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title text-info coinDetails" id="offcanvasDarkNavbarLabel">Options</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active coinDetails" aria-current="page" href="/">Home</a>
+            </li><hr>
+
+            <li class="nav-item coinDetails">
+              <a class="nav-link active coinDetails" aria-current="page" href="cryptoSymbols.html">All Coin Symbols</a>
+            </li><hr><br>
+            
+            <li class="nav-item">
+              <h3 class="coinDetails">Search for coin</h3>
+            </li>           
+          </ul>
+          <form class="d-flex" method="post" action="/search.ejs">
+            <input class="form-control me-2"  name="searchCoin" type="search" placeholder="Type Coin Symbol" aria-label="Search">
+            <button class="btn btn-info" type="submit">Search</button>
+          </form>
+          <p class="text-light" style="font-size:0.9rem;">** Check <bold class="text-info">"All Coin Symbols"</bold> for coin symbols **</p>
+          <br><hr>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <br><br><br><br>

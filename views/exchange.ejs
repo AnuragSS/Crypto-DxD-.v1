@@ -1,0 +1,330 @@
+
+
+<%- include("header")  %> 
+
+<body class="bg-dark navbar-dark">
+
+
+    <!--Nav-Bar-->
+
+      <%- include('navBar')  %> 
+
+      <!-- Table dashboard-->
+      <table class="table table-dark table-striped text-center">
+        <thead>
+          <tr>
+            <th scope="col" class="h4 text-info">Symbol</th>
+            <th scope="col" class="h4 text-info">Name</th>>
+            <th scope="col" class="h4 text-info">Price</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <hr>
+        <tbody>
+
+
+                        <!-- BITCOIN  -->
+
+          
+          <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=bitcoinIcon  %> "   alt=""></th>
+            <td class="align-middle">Bitcoin</td>
+            <td  style="color:#8ac926" class="align-middle" > <%= bitcoinPrice  %> ₹</td>
+            <td class="align-middle">
+              <form action="/btc.ejs" method="post" class="align-middle">
+             <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+            </form></td>
+            <!-- https://logosmarcas.net/wp-content/uploads/2020/08/Bitcoin-Emblema.png -->
+          </tr>
+        
+
+                    <!-- ETHEREUM COIN -->
+
+        
+          <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=ethereumIcon  %> "  alt=""></th>
+            <td class="align-middle">Ethereum</td>
+            <td style="color:#8ac926" class="align-middle"><%= ethereumPrice %> ₹</td>
+            <td class="align-middle">
+              <form action="/eth.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+            </td>
+          </tr>
+
+
+                   
+
+                              <!-- RIPPLE COIN -->
+                                
+
+          <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=rippleIcon  %> "  alt=""></th>
+            <td class="align-middle">Ripple</td>
+            <td style="color:#8ac926" class="align-middle"> <%= ripplePrice  %>  ₹</td>
+            <td class="align-middle">
+              <form action="/xrp.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+            </td>
+          </tr>
+
+                        <!-- CARDANO COIN -->
+
+          <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=cardanoIcon  %> "  alt=""></th>
+            <td class="align-middle">Cardano</td>
+            <td style="color:#8ac926" class="align-middle"> <%= cardanoPrice %> ₹</td>
+            <td class="align-middle">
+              <form action="/ada.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+            </td>
+          </tr>
+
+
+                     <!-- LITECOIN  -->
+
+
+          <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=litecoinIcon  %> "  alt=""></th>
+            <td class="align-middle">Lite-Coin</td>
+            <td style="color:#8ac926" class="align-middle"> <%= litePrice  %> ₹</td>
+            <td class="align-middle">
+              <form action="/ltc.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+            </td>
+          </tr>
+
+
+                              <!-- SOLANA COIN -->
+
+
+          <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=solanaIcon  %> "  alt=""></th>
+            <td class="align-middle">Solana</td>
+            <td style="color:#8ac926" class="align-middle"> <%= solanaPrice  %> ₹</td>
+            <td class="align-middle">
+              <form action="/sol.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+            </td>
+          </tr>
+
+                    <!-- BINANCE COIN -->
+
+          <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=binanceIcon  %> "  alt=""></th>
+            <td class="align-middle">Bnb-Coin</td>
+            <td style="color:#8ac926" class="align-middle"> <%= bnbPrice  %> ₹</td>
+            <td class="align-middle">
+              <form action="/bnb.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+            </td>
+
+
+                   <!-- DOGE COIN -->
+
+
+          <tr>
+            <th scope="row"> <img src= "https://www.cryptocompare.com/<%=dogeIcon  %> "  alt=""></th>
+            <td class="align-middle">Doge</td>
+            <td style="color:#8ac926" class="align-middle"> <%= dogePrice %> ₹</td>
+            <td class="align-middle">
+              <form action="/doge.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+            </td>
+          </tr>
+
+
+                       <!-- TETHER COIN -->
+
+          <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=tetherIcon  %> "  alt="">T</th>
+            <td class="align-middle">Tether</td>
+            <td style="color:#8ac926" class="align-middle"><%= tetherPrice  %> ₹</td>
+            <td class="align-middle">
+              <form action="/tether.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+            </td>
+          </tr>
+
+                      <!-- POLKADOT COIN -->
+
+          <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=polkadotIcon  %> "  alt=""></th>
+            <td class="align-middle">Polkadot</td>
+            <td style="color:#8ac926" class="align-middle"> <%= polkadotPrice %> ₹</td>
+            <td class="align-middle">
+              <form action="/dot.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+            </td>
+          </tr>
+
+                 <!-- COSMOS COIN -->
+
+          <tr>
+                  <th scope="row"><img src= "https://www.cryptocompare.com/<%=atomIcon  %> "  alt=""></th>
+                  <td class="align-middle">Cosmos</td>
+                  <td style="color:#8ac926" class="align-middle"> <%= atomPrice %> ₹</td>
+                  <td class="align-middle">
+                    <form action="/atom.ejs" method="post" class="align-middle">
+                      <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+                     </form>
+                  </td>
+           </tr>
+
+                          <!-- LUNA COIN  -->
+
+          <tr>
+                  <th scope="row"><img src= "https://www.cryptocompare.com/<%=lunaIcon  %> "  alt=""></th>
+                  <td class="align-middle">Terra</td>
+                  <td style="color:#8ac926" class="align-middle"> <%= lunaPrice %> ₹</td>
+                  <td class="align-middle">
+                    <form action="/luna.ejs" method="post" class="align-middle">
+                      <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+                     </form>
+                  </td>
+           </tr>
+
+
+                     <!-- CHAINLINK COIN -->
+
+          <tr>
+                      <th scope="row"><img src= "https://www.cryptocompare.com/<%=chainLinkIcon  %> "  alt=""></th>
+                      <td class="align-middle">Chainlink</td>
+                      <td style="color:#8ac926" class="align-middle"> <%= chainLinkPrice %> ₹</td>
+                      <td class="align-middle">
+                        <form action="/link.ejs" method="post" class="align-middle">
+                          <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+                         </form>
+                      </td>
+           </tr>
+
+                         <!-- MATIC NETWORK -->
+
+          <tr>
+                          <th scope="row"><img src= "https://www.cryptocompare.com/<%=maticNetworkIcon  %> "  alt=""></th>
+                          <td class="align-middle">Matic Network</td>
+                          <td style="color:#8ac926" class="align-middle"> <%= maticNetworkPrice %> ₹</td>
+                          <td class="align-middle">
+                            <form action="/matic.ejs" method="post" class="align-middle">
+                              <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+                             </form>
+                          </td>
+           </tr>
+
+
+                             <!-- STELLAR COIN -->
+
+          <tr>
+                              <th scope="row"><img src= "https://www.cryptocompare.com/<%=stellarIcon  %> "  alt=""></th>
+                              <td class="align-middle">Stellar</td>
+                              <td style="color:#8ac926" class="align-middle"> <%= stellarPrice %> ₹</td>
+                              <td class="align-middle">
+                                <form action="/xlm.ejs" method="post" class="align-middle">
+                                  <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+                                 </form>
+                              </td>
+           </tr>
+
+                                   <!-- ELLIPSIS X -->
+                              
+          <tr>
+                                    <th scope="row"><img src= "https://www.cryptocompare.com/<%=ellipsisIcon  %> "  alt=""></th>
+                                    <td class="align-middle">Ellipsis X</td>
+                                    <td style="color:#8ac926" class="align-middle"> <%= ellipsisPrice %> ₹</td>
+                                    <td class="align-middle">
+                                      <form action="/eps.ejs" method="post" class="align-middle">
+                                        <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+                                       </form>
+                                    </td>
+           </tr>
+
+
+                             <!-- MONERO COIN -->
+
+          <tr>
+                              <th scope="row"><img src= "https://www.cryptocompare.com/<%=moneroIcon  %> "  alt=""></th>
+                              <td class="align-middle">Monero</td>
+                              <td style="color:#8ac926" class="align-middle"> <%= moneroPrice %> ₹</td>
+                              <td class="align-middle">
+                                <form action="/xmr.ejs" method="post" class="align-middle">
+                                  <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+                                 </form>
+                              </td>
+           </tr>
+
+
+           <!-- UNISWAP COIN -->
+
+           <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=uniSwapIcon  %> "  alt=""></th>
+            <td class="align-middle">Uniswap</td>
+            <td style="color:#8ac926" class="align-middle"> <%= uniSwapPrice %> ₹</td>
+            <td class="align-middle">
+              <form action="/uni.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+             </td>
+           </tr>
+
+
+           <!-- AXIE INFINITY -->
+
+         <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=axieInfinityIcon  %> "  alt=""></th>
+            <td class="align-middle">Axie Infinity</td>
+            <td style="color:#8ac926" class="align-middle"> <%= axieInfinityPrice %> ₹</td>
+             <td class="align-middle">
+              <form action="/axs.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+             </td>
+           </tr>
+
+
+           <!-- Ethereum Name Service -->
+
+           <tr>
+            <th scope="row"><img src= "https://www.cryptocompare.com/<%=ethereumNsIcon  %> "  alt=""></th>
+            <td class="align-middle">Ethereum Name Service</td>
+            <td style="color:#8ac926" class="align-middle"> <%= ethereumNsPrice %> ₹</td>
+             <td class="align-middle">
+              <form action="/ens.ejs" method="post" class="align-middle">
+                <div class="align-middle"><button type="submit" class="btn btn-info ">Statistics</button></div> 
+               </form>
+             </td>
+           </tr>
+
+
+        </tbody>
+      </table>
+      
+      <a href="/"><button type="button" class="btn btn-light">Update-Prices</button></a>
+     <hr style="border-color:white ;">
+     <h1 class="coinName">Search for coin</h1>
+     
+      <form class="d-flex" action="/search.ejs" method="post">
+        <input class="form-control me-2" name="searchCoin" type="search" placeholder="Type coin symbol" aria-label="Search">
+       <button class="btn btn-outline-info" type="submit">Search</button><br>        
+      </form>
+      <p class="text-light">Symbols eg. BTC,APE,TRX,ETC</p><br>
+        <a href="cryptoSymbols.html" style="text-decoration: none;">
+          <h4 style="text-decoration:none;" class="text-warning h4"> Click Here To See All Symbols </h4>
+        </a><br><hr style="border-color: white;"><br>
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</body>
+</html>
+

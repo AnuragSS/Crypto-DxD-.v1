@@ -1,0 +1,147 @@
+<img src= "https://www.cryptocompare.com/<%=cryptoIcon  %> " class="coinImg"    alt="">
+<hr class="coinPage"><br>
+
+<div class="container-fluid allDetails">
+    <!-- Coin Price Details -->
+
+    <h2 class="coinDetails text-primary">Price Details:</h2><br>   
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Context</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Current Price</th>
+            <td  style="color:#8ac926"><%= cryptoCurrentPrice %> ₹</td>
+          </tr>
+          <tr>
+            <th scope="row">24 Hours High</th>
+            <td  style="color:#8ac926"><%=cryptoHigh24H  %> ₹</td>           
+          </tr>
+          <tr>
+            <th scope="row">24 Hours Low</th>
+            <td  style="color:#8ac926"><%= cryptoLow24H  %> ₹</td>
+          </tr>
+          <tr>
+            <th scope="row">Open Hour</th>
+            <td  style="color:#8ac926"><%= cryptoOpenHour  %> ₹</td>
+          </tr>
+          <tr>
+            <th scope="row">High Hour</th>
+            <td  style="color:#8ac926"><%= cryptoHighHour  %> ₹</td>
+          </tr>
+          <tr>
+            <th scope="row">Low Hour</th>
+            <td  style="color:#8ac926"><%= cryptoLowHour  %> ₹</td>
+          </tr>
+          <tr>
+            <th scope="row">Change Hour</th>
+            <td  style="color:#8ac926"><%= cryptoChangeHour %> ₹</td>
+          </tr>
+          <tr>
+            <th scope="row">Change Day</th>
+            <td  style="color:#8ac926"><%=cryptoChangeDay  %> ₹</td>
+          </tr>
+          
+        </tbody>
+      </table><br>
+      <hr class="coinPage"><br>
+
+
+     <!-- Coin All Volume Details -->
+
+
+
+      <h2 class="coinDetails text-primary">Volume Details:</h2><br>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Context</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Volume Traded 24 Hours</th>
+            <td class="text-info"><%= cryptoVolume24H  %> </td>
+          </tr>
+          <tr>
+            <th scope="row">Last Traded Volume</th>
+            <td class="text-info"><%= cryptoLastTradedVolume  %> </td>           
+          </tr>
+          <tr>
+            <th scope="row">Volume Day </th>
+            <td class="text-info"><%= cryptoVolumeDay  %> </td>
+          </tr>
+        </tbody>
+      </table><br>
+      <hr class="coinPage"><br>
+
+       <!-- Coin All Market Details -->
+
+
+      <h2 class="coinDetails text-primary">Market Details:</h2><br>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Context</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Market-Capital</th>
+            <td  style="color:#8ac926"><%= cryptoMktCpt  %> ₹</td>
+          </tr>
+          <tr>
+            <th scope="row">Supply</th>
+            <td  style="color:#8ac926"><%= cryptoSupply  %> </td>           
+          </tr>
+          <tr>
+            <th scope="row">Circulating Supply</th>
+            <td  style="color:#8ac926"><%= cryptoCktSup  %> </td>
+          </tr>
+          <tr>
+            <th scope="row">Circulating Supply Market Capital</th>
+            <td  style="color:#8ac926"><%= cryptoCktMktCpt  %> ₹</td>
+          </tr>
+          
+          
+        </tbody>
+      </table><br>
+      <hr class="coinPage"><br>
+
+      
+        <!-- Coin Extra Details -->
+
+      <h2 class="coinDetails text-primary">Extra Details</h2>
+      <br>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Context</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Last Trade ID:</th>
+            <td class="text-info"><%=cryptoTradeId  %> </td>
+          </tr>
+          <tr>
+            <th scope="row">Last Trade Market:</th>
+            <td class="text-info"><%= cryptoTradeMarket  %> </td>           
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <hr class="coinPage"><br>
+      <form action="/" method="get">
+        <button type="submit" class="btn btn-lg btn-info">back</button>
+      </form><br>
+      <hr class="coinPage"><br>
+
+</div>

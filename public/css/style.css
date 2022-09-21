@@ -1,0 +1,59 @@
+body{
+    text-align: center;
+ 
+}
+
+
+h1{
+    color:white;
+}
+img{
+    height: 3rem;
+    width: 4rem;
+}
+.price{
+    color:#8ac926;
+}
+.priceNew{
+    color: #8ac926;
+}
+
+
+.brandName{
+    font-family: 'Audiowide', cursive;
+}
+
+.coinName{
+    font-family: 'Oxanium', cursive;
+}
+
+
+/* Bitcoin page styling  */
+
+.CoinImg{
+    width:10rem;
+    height: 10rem;
+}
+
+.coinPage{
+    border-radius: 2px;
+    border-color: antiquewhite;
+}
+
+.coinPrice{
+    color:#8ac926;
+}
+.coinDetails{
+    font-family: 'Oxanium', cursive;
+}
+
+.navbar-toggler-icon{
+    opacity: 1;
+    
+}
+.navbar-toggler{
+    opacity:1 ;
+    border-width:0.2rem;
+    
+    border-color: white;
+}

@@ -1,0 +1,94 @@
+<%- include('header')  %>
+
+<body class="text-center bg-dark">
+    <%-include('navBar')  %>
+    
+    <h1><%= coinIdName  %> </h1>
+    <br><h2 class="text-info">Asset Id:<%= assetName  %> </h2><br>
+    <hr>
+    <h3 class="text-primary coinDetails">Description:</h3>
+    <p class="text-warning"><%= coinDescription  %> </p>
+    <hr><br>
+    <h2 class="text-primary coinDetails">Price Details</h2>
+    <br>
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Context</th>
+            <th scope="col">Value</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Current Price</th>
+            <td style="color:#8ac926"><%= coinCurrentPrice  %> $</td>
+          </tr>
+          <tr>
+            <th scope="row">Change 1 Hour</th>
+            <td style="color:#8ac926"><%= coinChange1H  %> $</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">Change 24 Hours</th>
+            <td style="color:#8ac926"><%= coinChange24H  %> $</td>
+          </tr>
+          <tr>
+            <th scope="row">Change 7 days</th>
+            <td style="color:#8ac926"><%= coinChange7D  %> $</td>
+          </tr>
+        </tbody>
+      </table>
+      <br><hr><br>
+      <h2 class="text-primary coinDetails">Volume Details</h2><br>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Context</th>
+            <th scope="col">Value</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Volume 24 Hours</th>
+            <td class="text-info"><%= coinVolume24H  %> </td>
+          </tr>         
+        </tbody>
+      </table><br><hr><br>
+      <h2 class="text-primary coinDetails">Market Details</h2>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Context</th>
+            <th scope="col">Value</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Supply</th>
+            <td class="text-info"><%= coinSupply  %> </td>
+          </tr>
+          <tr>
+            <th scope="row">Circulating Supply</th>
+            <td class="text-info"><%= coinCktSup  %> </td>
+            
+          </tr>
+          <tr>
+            <th scope="row">Max Supply</th>
+            <td class="text-info"><%= coinMaxSupply  %> </td>
+          </tr>
+          <tr>
+            <th scope="row">Market Capital</th>
+            <td style="color:#8ac926"><%= coinMktCap  %> $</td>
+          </tr>
+          <tr>
+            <th scope="row">Full Diluted Market Capital</th>
+            <td style="color:#8ac926"><%= coinFulDilMktCap  %> $</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+</body>
